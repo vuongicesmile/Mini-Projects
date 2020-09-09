@@ -1,0 +1,28 @@
+#container
+{
+    width: 700px;
+    height: 450px;
+    margin: 70px auto;
+    border:  2px solid green;
+
+}
+
+h2{
+    color:  green;
+    text-align: center;
+}
+#project{
+    width: 650px;
+    height: 250px;
+    margin: 0 auto;
+}
+ol li {
+    border:  1px dotted black;
+    cursor: pointer;
+    padding:  5px;
+    margin-bottom: 5px;
+}
+ol li:hover {
+    background: blue;
+    
+}
