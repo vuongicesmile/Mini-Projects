@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/anhnen"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtTienNguoiDung"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tien"
+        android:minWidth="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="10"
+        android:textColor="#000"
+        android:textSize="20sp" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgAnhCauDo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="#000000"
+            android:src="@drawable/a" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minHeight="100dp">
+
+        <GridView
+            android:id="@+id/gdvCautraloi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"></GridView>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <GridView
+        android:id="@+id/gdvDapAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"></GridView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp">
+        <Button
+            android:onClick="MoGoiY"
+            android:gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tien"
+            android:text="Gợi ý"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <Button
+            android:onClick="DoiCauHoi"
+            android:gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tien"
+            android:text="Đổi câu hỏi"
+            android:textColor="#000"
+        android:textSize="20sp" />
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
