@@ -7,11 +7,14 @@ print_r($fileUpload);
 echo '</pre>';
 
 if($fileUpload['name'] != null){
-    $file= $fileUpload['tmp_name'];
-  $des ='./file/'.$fileUpload['name']; 
+    $filename= $fileUpload['tmp_name'];
+    $destination ='./file/'.$fileUpload['name']; 
 
-     move_uploaded_file($file,$des);
+    //  move_uploaded_file($filename,$destination);
 
+     if(copy($filename,$destination)){
+       echo 'sucess';
+     };
 
 }
 
